@@ -13,6 +13,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -37,14 +38,14 @@
     <div class="navbar-header">
         <a class="navbar-brand" href="#">Frizerski salon Mirko</a>
     </div>
-
+<div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav navbar-right">
       <li class="active"><a href="#">Kaj nudimo</a></li>
       <li><a href="#">Naroči se</a></li>
       <li><a href="#">FAQ</a></li> 
       <li><a href="#">O nas</a></li> 
       <li><div class="row">
-  <div class="col-md-8">
+  <div class="col-sm-offset-1 col-sm-8">
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Iskalnik">
     </div><!-- /input-group -->
@@ -52,6 +53,7 @@
           </div>
         </li>
        </ul>
+        </div>
         </div>
 </nav>
 
@@ -73,7 +75,7 @@
 
       <div class="item active">
         <img src="http://bozidaradzija.com/wp-content/uploads/2015/02/frizer.jpg" alt="Chania" width="600" height="300">
-        <div class="carousel-caption" style="color: red; text-shadow: 2px 2px #FAFAFA;">
+        <div class="carousel-caption" style="color: red; text-shadow: 2px 2px #FAFAFA; font-family: Lobster;">
           <h1>Frizer Mirko</h1>
           <h4>Najboljše Frizure</h4>
         </div>
@@ -108,6 +110,34 @@
     </a>
   </div>
 </div>
+
+<!-- konec topa -->
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Pozdravlja vas frizerski salon Mirko</h4>
+            </div>
+            <div class="modal-body">
+				<p>Vpišite vaše ime in e-poštni naslov. Poslali vam bomo naše najboljše ponudbe.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Ime in priimek">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-poštni naslov">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Pošlji</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--izpostavitve -->
+
 <div class="container">
     <h1 class="text-center">Najboljši frizer v mestu</h1>
     </div>
@@ -120,7 +150,7 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Nega las</h4>
+                        <h4> <i class="fa fa-fw fa-check"></i> Nega las</h4>
                     </div>
                     <div class="panel-body">
                       <img src="http://opusteno.rs/slike/2013/10/smesne-slike-20241/bez-alata-nema-zanata-frizer.jpg" alt="Chania" width="260" height="150" />
@@ -183,7 +213,7 @@
    </div>
    
    <div class = "form-group">
-      <label for = "name" class = "col-sm-2 control-label"></label>
+      <label for = "lastname" class = "col-sm-2 control-label"></label>
       <div class = "col-sm-9"> 
       <textarea class = "form-control" rows = "5">Ostale želje glede frizure</textarea>
       </div>
@@ -251,6 +281,13 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -261,6 +298,7 @@
         interval: 5000 //changes the speed
     })
     </script>
+
 
 <ul class="list-group">
   <li class="list-group-item">Kakšen je salon in ekipa?</li>
